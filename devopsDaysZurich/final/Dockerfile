@@ -13,10 +13,16 @@ RUN gcc -o helloWorld hello.c
 
 # use another image to run the program
 FROM ubuntu:24.04 
-# FROM gcr.io/distroless/cc:nonroot
+#FROM gcr.io/distroless/cc:nonroot
+
+# create user
+RUN useradd -m myuser
 
 # copy binary executable to new layer
 COPY --from=build-env ./helloWorld ./helloWorld 
+
+# change to USER nonroot for distroless google image
+USER myuser 
 
 # Run the program
 ENTRYPOINT ["./helloWorld"]

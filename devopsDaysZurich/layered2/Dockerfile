@@ -1,8 +1,8 @@
 # use ubuntu as base image
-FROM ubuntu:24.04 as build-env
+FROM alpine:3.20 AS build-env
 
-# install build-essential package to compile the source code
-RUN apt update && apt install -y build-essential
+# install package to compile the source code
+RUN apk add --no-cache build-base
 
 # copy the source code
 COPY hello.c hello.c
