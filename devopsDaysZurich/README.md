@@ -13,7 +13,6 @@
 - [Add security mechanisms](#add-security-mechanisms)
 - [Exercise](#exercise)
 - [Clean Up](#clean-up)
-- [Extension](#extension)
 
 ## Prerequisites
 
@@ -299,4 +298,4 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Clean Up
 
-docker rmi devopsdays
+docker rmi $(docker images devopsdays -q)
