@@ -27,6 +27,8 @@ Ensure you have the following installed:
 - [Get Dive](https://github.com/wagoodman/dive?tab=readme-ov-file#installation)
 ---
 
+You can follow get the slides to follow the presentation here also -> [Slides](https://github.com/rv0lt/workshopsAndTalks/blob/main/devopsDaysZurich/devopsdays.pdf)
+
 ## Basic Dockerfiles
 
 Let's move to the first basic folder: `cd basic`
