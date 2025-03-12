@@ -295,7 +295,7 @@ Finally, use all the concepts and improve a given image
 Open [http://localhost:3000](http://localhost:3000)
 
 - [ ] Analize the Dockerfile and modify it so use multistage builds
-- [ ] Improve the multistage using google distroless as the foremost image -> [Repository](https://github.com/GoogleContainerTools/distroless)
+- [ ] Improve the multistage using google distroless as the foremost image -> [Google distroless repository](https://github.com/GoogleContainerTools/distroless)
 - [ ] Analize the basic, layered and distroless using both trivy and Dive
 - [ ] If you have time, you can make your own distroless using from scratch, tip, you can use `ldd` to find the libraries a binary needs
 
